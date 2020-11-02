@@ -1,11 +1,11 @@
 # Get MongoDB on IBM Cloud
 
 You should have an IBM Cloud account, otherwise you can [register here].
-At the end of the tutorial you will have a cluster with MariaDB up and runnning.
+At the end of the tutorial you will have a cluster with MongoDB up and runnning.
 
 1. We will provision a new Kubernetes Cluster for you if, you already have one skip to step **2**
 2. We will deploy  the IBM Cloud Block Storage plug-in, if already have it skip to step **3**
-3. MariaDB deployment
+3. MongoDB deployment
 
 ## Step 1 provision Kubernetes Cluster
 
@@ -67,13 +67,13 @@ The Block Storage plug-in is a persistent, high-performance iSCSI storage that y
 ![block-create](/block-storage-create.png)
  
 
-## Step 3 deploy MariaDB
+## Step 3 deploy MongoDB
   
-We will deploy  MariaDB on our cluster 
+We will deploy  MongoDB on our cluster 
   
 * Click the **Catalog** button on the top 
 * Select **Software** from the catalog
-* Search for **MariaDB** and click on it
+* Search for **MongoDB** and click on it
 ![search](/search.png)
 
 * Please select IBM Kubernetes Service
@@ -89,7 +89,7 @@ We will deploy  MariaDB on our cluster
 
 ![dr-resource](/details-resource.png)
 
-* Give **tags** to your MariaDB, for more information visit [tags]
+* Give **tags** to your MongoDB, for more information visit [tags]
 
 ![nginx-tags](/details-tags.png)
 
@@ -97,22 +97,22 @@ We will deploy  MariaDB on our cluster
 
 ![def-val](/parameters.png)
 
-* Please set the MariaDB root password in the parameters
+* Please set the MongoDB root password in the parameters
 ![pass](/root-password.png)
 
 * After finishing everything, **tick** the box next to the agreements and click **install**
 
 ![Install](/aggreement-create.png)
 
-* The MariaDB workspace will start installing, wait a couple of minutes 
+* The MongoDB workspace will start installing, wait a couple of minutes 
 
 ![MariaDB-install](/in-progress.png)
 
-* Your  MariaDB workspace has been successfully deployed
+* Your  MongoDB workspace has been successfully deployed
 
 ![maria-finsihed](/done.png)
 
-## Verify MariaDB installation
+## Verify MongoDB installation
 
 * Go to [Resources] in your browser 
 * Click on **Clusters**
